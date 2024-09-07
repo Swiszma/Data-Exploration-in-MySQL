@@ -29,7 +29,7 @@ FROM layoffs_staging2; -- started from 2020-03-11 till 2023-03-06, almost 3 year
 SELECT industry, SUM(total_laid_off)
 FROM layoffs_staging2
 GROUP BY industry
-ORDER BY 2 DESC; -- Condumer industry has the highest laid_off followed by Retail. least is manufacturing
+ORDER BY 2 DESC; -- Consumer industry has the highest laid_off followed by Retail. least is manufacturing
 
 SELECT country, SUM(total_laid_off)
 FROM layoffs_staging2
